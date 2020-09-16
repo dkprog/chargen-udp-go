@@ -2,7 +2,7 @@
 
 ## Purpose
 
-The [**Character Generator Protocol (CHARGEN)**](https://en.wikipedia.org/wiki/Character_Generator_Protocol) is a network protocol for testing created in [1984](https://tools.ietf.org/html/rfc864). In the UDP implementation, whenever the client sends a datagram to the server it will get back another one containing a stream of 72 bytes of ASCII characters.
+The [**Character Generator Protocol (CHARGEN)**](https://en.wikipedia.org/wiki/Character_Generator_Protocol) is a network protocol for testing created in [1983](https://tools.ietf.org/html/rfc864). In the UDP implementation, whenever the client sends a datagram to the server it will get back another one containing a stream of 72 bytes of ASCII characters.
 
 My goal is to learn more about UDP network programming in Go before dive into more complex protocols.
 

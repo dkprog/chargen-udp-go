@@ -11,7 +11,11 @@ import (
 func main() {
 	port := flag.Int("port", 3019, "CHARGEN udp port")
 	flag.Parse()
-	address := fmt.Sprintf(":%d", *port)
+	serve(*port)
+}
+
+func serve(port int) {
+	address := fmt.Sprintf(":%d", port)
 	conn, err := net.ListenPacket("udp", address)
 	var start uint = 0
 	if err != nil {
